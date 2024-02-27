@@ -1,0 +1,513 @@
+@font-face {
+    font-family: Neue;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+
+
+#main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neue';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #D9E8F8;
+    position: relative;
+    padding: 0 2vw
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #D9E8F8;
+    
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+    
+}
+
+nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav #nav-part2 h4 {
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(99, 95, 95);
+    border-radius: 50px;
+    font-weight: 500;
+    color: #958d8d;
+    position: relative;
+    font-size: 18px;
+    transition: all ease 0.3s ;
+    overflow: hidden;
+    
+}
+
+#nav-part2 h4::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #5fd7ff;
+    left: 0;
+    bottom: 100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+    
+}
+
+#nav-part2 h4:hover::after {
+    bottom: -0%;
+    border-radius: 0;
+    
+    
+}
+
+#nav-part2 h4 a {
+    text-decoration: none;
+    color: #000000;
+    z-index: 9;
+    position: relative;
+
+    
+}
+
+#nav-part2 h4 a:hover {
+    color: black;
+    
+    
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+
+    display: flex;
+    align-items : flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 2.5vw 0;
+    
+}
+
+#center h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    font-family: 'Neue';
+    line-height: 2vw;
+    text-align: left;
+    
+}
+
+#center #right h4{
+    font-size: 8vw;
+    line-height: 8vw;
+    font-weight: 500;
+    
+}
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    left: 0;
+    top: 65vh;
+    
+}
+
+#hero-1 {
+    background-color: #00ABE4;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+    
+}
+
+#hero-2 {
+    background: linear-gradient(#00ABE4, #00ABE4);
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+#hero-3 {
+    background: linear-gradient(#00ABE4, #00ABE4);
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #D9E8F8;
+    padding:  10vw 0;
+    margin-bottom: -10vw;
+}
+
+.elem {
+    height: 100px;
+    width: 70vw;
+    border-bottom: 1px solid rgba(110, 109, 109, 0.216);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 9vw;
+}               
+
+.elem h2{
+    font-size : 4vw;
+    position: relative;
+    z-index: 9;
+
+}
+
+.elem .overlay{
+    height: 100%;   
+    width: 100%;
+    background-color: #5fd7ff;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+    
+
+}
+
+.elem:hover .overlay{
+    top: 0;
+    
+}
+
+.elem-container{
+    margin-bottom: 10vw;
+
+}
+
+.projectsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0vw;
+    margin-bottom: 10vw;
+}
+
+#fixed-image{
+    height: 32vw;
+    width :28vw;
+    position: fixed;
+    border-radius: 10px;
+    z-index: 99;
+    left: 5%;
+    top :15%;
+    display: none;
+    background-size: center;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 0 0 10px;
+
+}
+
+#page3 .featureheader {
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    flex-direction: row;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    position: relative;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: Neuehaasdisplay roman,sans-serif;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.2;
+    min-width: 10%;
+}
+
+
+#page3 #elem2-container{
+    margin-bottom: 10vw;
+    padding: 0vw;
+
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #D9E8F8;
+    /* background-color: black; */
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #D9E8F8;
+    
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialIcons a{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+
+.socialIcons a:hover{
+    color: #5FD7FF;
+
+}
+
+.footerNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(110, 109, 109, 0.216);
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+
+
+/* 
+#blaze-shape {
+    position: absolute;
+    width: 50vw;
+    height: 40vw;
+    right: 0;
+    top: -30vh;
+    
+}
+
+#blaze-1 {
+    background-color: #00ABE4;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(100px);
+    position: absolute;
+    
+}
+
+#blaze-2 {
+    background: linear-gradient(#00ABE4, #00ABE4);
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+#blaze-3 {
+    background: linear-gradient(#00ABE4, #00ABE4);
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+} 
+ */
+
+
+
+
+
+
+/* 
+#blaze-shape {
+    /* place it on the footer */
+    /* position: absolute;
+    width: 100vw;
+    height: 20vw ;
+    padding: 10px;
+    margin : 0;
+    right: 40;
+    bottom: 30vh;
+
+    
+}
+
+#blaze-1 {
+    background-color: #00ABE4;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 100%;
+    filter: blur(100px);
+    position: absolute;
+    
+}
+
+#blaze-2 {
+    background: linear-gradient(#00ABE4, #00ABE4);
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 100%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(50px);
+}
+
+#blaze-3 {
+    background: linear-gradient(#00ABE4, #00ABE4);
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 100%;
+    filter: blur(100px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+} 
+  */
+
