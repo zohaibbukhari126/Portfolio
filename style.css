@@ -2,6 +2,7 @@
     font-family: Neue;
     src: url(./NeueHaasDisplayMediu.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 
 
 
@@ -511,3 +512,105 @@ footer{
 } 
   */
 
+
+/* Page 4 CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9E8F8;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+    font-family: 'Neue';
+    font-size: 18px;
+  padding: 20px;
+  background: #5FD7FF;
+
+          
+  border-radius: 5px;
+  color: black;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #5FD7FF, #00ABE4);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #000000, #000000, #000000);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+
+#page4 .featureheader {
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    flex-direction: row;
+    margin-left: 20em;
+    margin-right: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    position: relative;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: Neuehaasdisplay roman,sans-serif;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.2;
+    min-width: 10%;
+}
+
+#page4 # #elem2-container{
+    margin-bottom: 10vw;
+    padding: 0vw;
+
+}
